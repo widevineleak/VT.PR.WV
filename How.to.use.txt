@@ -1,0 +1,61 @@
+1. Install python 3.8.xx - 3.13.xx, be sure to add python to PATH while installing it.
+
+2. Install Microsoft Visual C++ Redistributable.
+
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+3. Run install.bat.
+
+4. Install this Firefox add-on
+
+https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
+
+and go to max.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Max
+
+For Amazon go to primevideo.com or amazon.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\Amazon
+
+For AppleTVPlus go to tv.apple.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\AppleTVPlus
+
+For iTunes go to tv.apple.com or music.apple.com and download the cookies, rename the file to default.txt and put it in
+
+vinetrimmer\Cookies\iTunes
+
+5. For the services that need credentials like DisneyPlus, Crunchyroll, Crave, Videoland, ParamountPlus, All4, RakutenTV and BritBox add the credentials in \vinetrimmer\vinetrimmer.yml, edit the file with notepad++.
+
+5. For downloading the video of an episode from primevideo.com use
+
+poetry run vt dl -al en -sl en -w S01E1 Amazon https://www.primevideo.com/region/eu/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/
+
+ 
+If you want to downlod the video for a specific seasons use
+
+poetry run vt dl -al en -sl en -w S01 Amazon https://www.primevideo.com/region/eu/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/
+
+6. For downloading from iTunes use
+
+poetry run vt dl -al tr -sl tr iTunes -m umc.cmc.2lj6d47e7094s6ss83j0uppdm
+
+For downloading from AppleTVPlus use
+
+poetry run vt dl -al en -sl en -w S01E01 AppleTVPlus https://tv.apple.com/us/show/big-beasts/umc.cmc.7d9yulmth1rvkwpij477qsqsk
+
+
+for more options use
+
+poetry run vt dl -h
+
+for the extra options in the services use
+
+poetry run vt dl Amazon -h
+
+instead of Amazon add the service name
+
+the extra options will be added after the service name
+
+7. Make a folder for the SL2000 or SL3000 in \vinetrimmer\devices and add in it bgroupcert.dat and zgpriv.dat and edit vinetrimmer.yml for adding the name of the folder, vinetrimmer will create prd file and reprovisioning it every an hour.

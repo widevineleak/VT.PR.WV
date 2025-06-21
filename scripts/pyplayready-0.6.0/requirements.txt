@@ -1,0 +1,8 @@
+requests
+pycryptodome
+ecpy
+construct==2.8.8
+click
+PyYAML
+aiohttp
+xmltodict
