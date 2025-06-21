@@ -1,0 +1,7 @@
+needs_auth: false
+
+endpoints:
+  content: https://uapi.adrise.tv/cms/content
+  search: https://search.production-public.tubi.io/api/v1/search
+
+  

@@ -1,0 +1,11 @@
+endpoints:
+  homepage: 'https://stan.com.au'
+  watch: 'https://www.stan.com.au/watch/{title_id}'
+  config: 'https://api.stan.com.au/config/{type}.json'
+  login: '/sessions/{type}'
+  manifest: 'https://api.stan.com.au/manifest/v1/dash/androidtv.mpd'
+
+meta:
+  login_source: 'www'
+
+hmac_key: 'p57ytjy4DMWT4BzANsLD6HysF7qZVWuqm4MVXVhCmquq4PSjbExMuFb6QcWK6QAx'

@@ -1,0 +1,4 @@
+endpoints:
+  series_info: https://graphql.ott.sky.com/graphql?extensions=%7B%22persistedQuery%22:%7B%22version%22:1,%22sha256Hash%22:%22b0f8096034e428db847e0c906f0207f7ee15ff05c853a51ef1fb410597d47b6a%22%7D%7D&variables=%7B%22id%22:%22{title_id}%22,%22idType%22:%22PSID%22,%22includeProgrammeTrailer%22:false,%22includeSeriesTrailer%22:false%7D
+  movie_info: https://graphql.ott.sky.com/graphql?extensions=%7B%22persistedQuery%22:%7B%22version%22:1,%22sha256Hash%22:%22b0f8096034e428db847e0c906f0207f7ee15ff05c853a51ef1fb410597d47b6a%22%7D%7D&variables=%7B%22id%22:%22{title_id}%22,%22idType%22:%22CID%22,%22includeProgrammeTrailer%22:false,%22includeSeriesTrailer%22:false%7D
+  vod: https://p.sky.com/video/playouts/vod

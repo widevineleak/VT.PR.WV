@@ -1,0 +1,74 @@
+decrypter: 'packager'
+tag: ''
+tag_sd: ''
+
+arguments: {}
+
+aria2c:
+  file_allocation: 'prealloc'
+  
+
+cdm:
+  default: 'xiaomi_mi_a1_15.0.0_60ceee88_8159_l3'
+  DisneyPlus: 'sharp_aquos_lcd_tv_4t-cxxfxx_sl3000'
+  Netflix: 'chromecdm'
+  Amazon: 'chromecdm'
+  #Amazon: 'mtc_mtc_atv_atv_sl3000'
+  Max: 'mtc_mtc_atv_atv_sl3000'
+  AppleTVPlus: 'mtc_mtc_atv_atv_sl3000'
+  Hulu: 'mtc_mtc_atv_atv_sl3000'
+
+cdm_api:
+  - name: ''
+    host: ''
+    key: ''
+    device: ''
+    type: ''
+    system_id: 
+    security_level:
+
+credentials:
+  HuluJP: 'email:password'
+  CTV: 'email:password'
+  Netflix: 'email:password'
+  DisneyPlus: 'email:password'
+  All4: 'email:password'
+  Stan: 'email:password'
+  Peacock: 'email:password'
+
+directories:
+  temp: ''
+  downloads: ''
+
+headers:
+  User-Agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36'
+
+key_vaults:
+  - type: 'local'
+    name: 'Local'
+    path: '{data_dir}/key_store.db'
+
+  - type: 'httpapi'
+    name: vault
+    host: http://api.drmlab.io/vault/
+    password: gEX75q7I5YVkvgF5SUkcNd41IbGrDtTT
+
+output_template:
+  movies: '{title}.{year}.{quality}.{source}.WEB-DL.{audio}.{video}-{tag}'
+  series: '{title}.{season_episode}.{episode_name}.{quality}.{source}.WEB-DL.{audio}.{video}-{tag}'
+  use_last_audio: false
+
+profiles:
+  default: 'default'
+
+default_proxy_service: 'nordvpn' # Options: 'surfshark', 'nordvpn' 'null'
+
+proxies: {}
+
+nordvpn:
+    username: ''
+    password: ''
+
+surfshark:
+    username: ''
+    password: ''

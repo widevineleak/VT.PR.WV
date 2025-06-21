@@ -1,0 +1,26 @@
+endpoints:
+  login: 'https://uiapi.id.nowtv.com/signin/service/international'
+  config: 'https://www.nowtv.com/international/static/b956eb3/config/{territory}/nowtv/nowtv/web/production/config.json'
+  tokens: 'https://auth.client.ott.sky.com/auth/tokens'
+  me: 'https://p.sky.com/auth/users/me'
+  node: 'https://ie.api.atom.nowtv.com/adapter-atlas/v3/query/node/'
+  vod: 'https://p.sky.com/video/playouts/vod'
+  search: 'https://clip.search.sky.com/bff/search/v1'
+
+client:
+  config_version: '1.0.8'
+  territory: 'GB'
+  provider: 'NOWTV'
+  proposition: 'NOWTV'
+  platform: 'ANDROIDTV'  # PC, ANDROID, ANDROIDTV
+  model: 'Nvidia Shield Android TV'
+  device: 'TV'  # COMPUTER, TABLET, TV,
+  id: 'Z-sKxKApCe7c3dBMGAYtKU8NmWKDcWrCKobKpnVTLqc'
+  drm_device_id: 'UNKNOWN'
+  client_sdk: 'IE-NOWTV-ANDROID-v1' # NOWTV-WEBPLAYER-v2
+  auth_scheme: 'MESSO'
+  auth_issuer: 'NOWTV'
+
+security:
+  signature_hmac_key_v4: "5f8RLBppaqKGO8bwKwNifjZ6bM8zXCVwkAK7hkhq3PS4pf"
+  signature_format: 'SkyOTT client="{client}",signature="{signature}",timestamp="{timestamp}",version="1.0"'

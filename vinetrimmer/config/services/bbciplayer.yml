@@ -1,0 +1,13 @@
+needs_auth: false
+
+base_url: https://www.bbc.co.uk/iplayer/{type}/{pid}
+user_agent: smarttv_AFTMM_Build_0003255372676_Chromium_41.0.2250.2
+api_key: D2FgtcTxGqqIgLsfBWTJdrQh2tVdeaAp
+
+endpoints:
+  episodes: https://ibl.api.bbci.co.uk/ibl/v1/episodes/{pid}?rights=mobile&availability=available
+  metadata: https://graph.ibl.api.bbc.co.uk/
+  playlist: https://www.bbc.co.uk/programmes/{pid}/playlist.json
+  open: https://{}/mediaselector/6/select/version/2.0/mediaset/{}/vpid/{}/
+  secure: https://{}/mediaselector/6/select/version/2.0/vpid/{}/format/json/mediaset/{}/proto/https
+  search: https://search.api.bbci.co.uk/formula/iplayer-ibl-root

@@ -1,0 +1,29 @@
+certificate: |
+  CsECCAMSEBcFuRfMEgSGiwYzOi93KowYgrSCkgUijgIwggEKAoIBAQCZ7Vs7Mn2rXiTvw7YqlbWYUgrVvMs3UD4GRbgU2Ha430BRBEGtjOOtsRu4jE5yWl5
+  KngeVKR1YWEAjp+GvDjipEnk5MAhhC28VjIeMfiG/+/7qd+EBnh5XgeikX0YmPRTmDoBYqGB63OBPrIRXsTeo1nzN6zNwXZg6IftO7L1KEMpHSQykfqpdQ4
+  IY3brxyt4zkvE9b/tkQv0x4b9AsMYE0cS6TJUgpL+X7r1gkpr87vVbuvVk4tDnbNfFXHOggrmWEguDWe3OJHBwgmgNb2fG2CxKxfMTRJCnTuw3r0svAQxZ6
+  ChD4lgvC2ufXbD8Xm7fZPvTCLRxG88SUAGcn1oJAgMBAAE6FGxpY2Vuc2Uud2lkZXZpbmUuY29tEoADrjRzFLWoNSl/JxOI+3u4y1J30kmCPN3R2jC5MzlR
+  HrPMveoEuUS5J8EhNG79verJ1BORfm7BdqEEOEYKUDvBlSubpOTOD8S/wgqYCKqvS/zRnB3PzfV0zKwo0bQQQWz53ogEMBy9szTK/NDUCXhCOmQuVGE98K/
+  PlspKkknYVeQrOnA+8XZ/apvTbWv4K+drvwy6T95Z0qvMdv62Qke4XEMfvKUiZrYZ/DaXlUP8qcu9u/r6DhpV51Wjx7zmVflkb1gquc9wqgi5efhn9joLK3
+  /bNixbxOzVVdhbyqnFk8ODyFfUnaq3fkC3hR3f0kmYgI41sljnXXjqwMoW9wRzBMINk+3k6P8cbxfmJD4/Paj8FwmHDsRfuoI6Jj8M76H3CTsZCZKDJjM3B
+  QQ6Kb2m+bQ0LMjfVDyxoRgvfF//M/EEkPrKWyU2C3YBXpxaBquO4C8A0ujVmGEEqsxN1HX9lu6c5OMm8huDxwWFd7OHMs3avGpr7RP7DUnTikXrh6X0
+
+endpoints:
+  layout: https://layout.videoland.bedrock.tech/front/v1/rtlnl/{platform}/main/{token}/{endpoint}/layout
+  seasoning: https://layout.videoland.bedrock.tech/front/v1/rtlnl/{platform}/main/{token}/program/{program}/block/{season_id}
+  license_pr: https://lic.drmtoday.com/license-proxy-headerauth/drmtoday/RightsManager.asmx
+  license_wv: https://lic.drmtoday.com/license-proxy-widevine/cenc/
+  license_token: https://drm.videoland.bedrock.tech/v1/customers/rtlnl/platforms/{platform}/services/videoland/users/{gigya}/videos/{clip}/upfront-token
+  authorization: https://accounts.eu1.gigya.com/accounts.login
+  jwt_tokens: https://front-auth.videoland.bedrock.tech/v2/platforms/{platform}/getJwt
+  profiles: "https://users.videoland.bedrock.tech/v2/platforms/{platform}/users/{gigya}/profiles"
+
+platform:
+  web: m6group_web
+  android_mob: m6group_android_mob
+  android_tv: m6group_android_tv
+
+sdk:
+  apikey: 3_W6BPwMz2FGQEfH4_nVRaj4Ak1F1XDp33an_8y8nXULn8nk43FHvPIpb0TLOYIaUI
+  build: 13414
+  version: 5.47.2

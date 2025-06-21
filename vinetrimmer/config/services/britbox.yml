@@ -1,0 +1,12 @@
+needs_auth: false
+headers:
+  user_agent: okhttp/3.14.9 #smarttv_AFTMM_Build_0003255372676_Chromium_41.0.2250.2
+  user_agent_web: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0
+  referer: https://www.britbox.com/
+
+endpoints:
+  metadata: https://rocket.us.britbox.com/page
+  manifest: https://open.live.bbc.co.uk/mediaselector/6/select/version/3.0/mediaset/{mediaset}/cvid/urn:bbc:pips:pid:{vpid}/transferformat/dash/proto/https
+  token: https://rocket.us.britbox.com/account/items/{id_}/videos
+  licence_wv: https://open.live.bbc.co.uk/drmauth/1/version/2.0/cvid/urn:bbc:pips:pid:{vpid}/mediaset/iptv-all-drm/licence/wv/cors/1
+  licence_pr: https://open.live.bbc.co.uk/drmauth/1/version/2.0/cvid/urn:bbc:pips:pid:{vpid}/mediaset/iptv-all-drm/licence/pr/cors/1
