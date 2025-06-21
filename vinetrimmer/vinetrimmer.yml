@@ -50,7 +50,7 @@ key_vaults:
 
   - type: 'httpapi'
     name: vault
-    host: http://api.drmlab.io/vault/
+    host: http://api.xxx.io/vault/
     password: gEX75q7I5YVkvgF5SUkcNd41IbGrDtTT
 
 output_template:
